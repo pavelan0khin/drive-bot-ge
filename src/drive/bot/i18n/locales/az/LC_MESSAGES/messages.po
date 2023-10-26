@@ -1,0 +1,304 @@
+# Azerbaijani translations for drive-ge-bot.
+# Copyright (C) 2023 Pavel Anokhin
+# This file is distributed under the same license as the drive-ge-bot
+# project.
+# Pavel Anokhin <p.a.anokhin@gmail.com>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version:  1.0.0\n"
+"Report-Msgid-Bugs-To: p.a.anokhin@gmail.com\n"
+"POT-Creation-Date: 2023-10-26 18:02+0400\n"
+"PO-Revision-Date: 2023-10-24 15:27+0400\n"
+"Last-Translator: Pavel Anokhin <p.a.anokhin@gmail.com>\n"
+"Language: az\n"
+"Language-Team: az <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.13.0\n"
+
+#: src/drive/bot/communication/text.py:3
+msgid "NEW_USER_START_MESSAGE"
+msgstr "Hello! Choose language"
+
+#: src/drive/bot/communication/text.py:5
+msgid "START_MESSAGE"
+msgstr ""
+"Salam! Aşağıdakı istənilən düyməni seçin. Ətraflı məlumat üçün /about "
+"əmrindən istifadə edin"
+
+#: src/drive/bot/communication/text.py:7
+msgid "SELECT_NEW_LANGUAGE"
+msgstr "Dil seçin"
+
+#: src/drive/bot/communication/text.py:9
+msgid "LANGUAGE_SELECTED"
+msgstr ""
+"Seçilmiş dil ingilis dilidir. /language əmrindən istifadə edərək dili "
+"dəyişə bilərsiniz"
+
+#: src/drive/bot/communication/text.py:11
+msgid "ALLOW_NOTIFICATIONS"
+msgstr ""
+"Məlumat bazasına yeni biletlər əlavə edildikdə və dəyişikliklər edildikdə"
+" xəbərdar olmaq istəyirsiniz? Reklam göndərməyəcəyəm :)"
+
+#: src/drive/bot/communication/text.py:13
+msgid "NOTIFICATIONS_ARE_ON"
+msgstr ""
+"Bildirişlər aktivləşdirilib. Onu söndürmək üçün əmr /notifications "
+"göndərin"
+
+#: src/drive/bot/communication/text.py:15
+msgid "NOTIFICATIONS_ARE_OFF"
+msgstr ""
+"Bildirişlər deaktiv edilib. Onu yandırmaq üçün /notifications əmrini "
+"göndərin"
+
+#: src/drive/bot/communication/text.py:17
+msgid "SELECT_BUTTONS"
+msgstr "Bir rejimi seçin və aşağıdakı düyməni basın"
+
+#: src/drive/bot/communication/text.py:19
+msgid "EXAM"
+msgstr "📚 İmtahan"
+
+#: src/drive/bot/communication/text.py:21
+msgid "ALL_TICKETS"
+msgstr "❓ Bütün suallar"
+
+#: src/drive/bot/communication/text.py:23
+msgid "YES"
+msgstr "Bəli"
+
+#: src/drive/bot/communication/text.py:25
+msgid "NO"
+msgstr "Yox"
+
+#: src/drive/bot/communication/text.py:27
+msgid "SELECT_CATEGORY"
+msgstr "Kateqoriya seç"
+
+#: src/drive/bot/communication/text.py:29
+msgid "DECLINE"
+msgstr "❌ Rədd et"
+
+#: src/drive/bot/communication/text.py:31
+msgid "UNKNOWN_ACTION"
+msgstr ""
+"Ups, deyəsən, hazırda orada olmamalı olan düyməyə klikləmisiniz. Əgər "
+"belədirsə, mənim səhvim - onu düzəltmək üçün /start əmrini göndərin"
+
+#: src/drive/bot/communication/text.py:33
+msgid "EXAM_STARTED"
+msgstr ""
+"Sınaq başladı, uğurlar. Bitirmək istəyirsinizsə, \"❌ Rədd et\" düyməsini "
+"basın."
+
+#: src/drive/bot/communication/text.py:35
+msgid "EXAM_FINISHED"
+msgstr ""
+"Test tamamlandı\n"
+"Ümumi suallar: {total_tickets}\n"
+"\n"
+"Düzgün cavab verildi: {total_valid}\n"
+"Yanlış cavab verildi: {total_invalid}"
+
+#: src/drive/bot/communication/text.py:37
+msgid "WHICH_ANSWER_CHOSEN"
+msgstr ""
+"İpucu: seçdiyiniz cavab qalın hərflərlə qeyd olunub. Düzgün cavab yaşıl "
+"emoji ilə, digər cavablar isə qırmızı emoji ilə qeyd olunur"
+
+#: src/drive/bot/communication/text.py:39
+msgid "DROP_PASSED_TICKETS_HISTORY"
+msgstr ""
+"Vay, deyəsən bütün biletləri keçmisiniz və daha heç nə qalmadı. Mənə "
+"/clearhistory əmrini göndər, mən tarixi təmizləyəcəm və təzə başlayaq :)"
+
+#: src/drive/bot/communication/text.py:41
+msgid "CONFIRM_CLEAR_HISTORY"
+msgstr ""
+"Həqiqətən bilet tarixçənizi təmizləmək istəyirsiniz? Bu o deməkdir ki, "
+"əvvəllər keçmiş sualları yenidən alacaqsınız"
+
+#: src/drive/bot/communication/text.py:43
+msgid "HISTORY_IS_CLEAR"
+msgstr "Tarix təmizləndi, yenidən imtahan verə bilərsiniz :)"
+
+#: src/drive/bot/communication/text.py:45
+msgid "HISTORY_IS_NOT_CLEAR"
+msgstr "Tamam, tarix təmizlənməyəcək"
+
+#: src/drive/bot/communication/text.py:47
+msgid "ACTION_DECLINED"
+msgstr "Aksiya rədd edildi. Aşağıdakı istənilən düyməni yenidən basa bilərsiniz"
+
+#: src/drive/bot/communication/text.py:49
+msgid "SESSION_IS_OVER"
+msgstr ""
+"Görünür, siz əvvəllər bu sualı göndərdiyim testdən imtina etmisiniz, ona "
+"cavab vermək mümkün deyil."
+
+#: src/drive/bot/communication/text.py:51
+msgid "ABOUT_MESSAGE"
+msgstr ""
+"Əmrlərin siyahısı:\n"
+"\n"
+"/start - start\n"
+"/about - bot haqqında məlumat\n"
+"/language - dili dəyişdirin\n"
+"/notifications - bildirişləri yandırın/söndürün\n"
+"/clearhistory - keçmiş testlərin tarixini silin\n"
+"/problem - sualda problem var (sualı cavablandırmaq lazımdır)\n"
+"\n"
+"Əgər siz tərtibatçısınızsa, mən pulsuz API (REST və GRPC) təqdim edirəm. "
+"Ətraflı məlumat üçün /api əmrini göndərin\n"
+"\n"
+"<a href='https://github.com'>Botun mənbə kodu</a> da mövcuddur. "
+"İstədiyiniz şəkildə istifadə edin\n"
+"\n"
+"Əgər təşəkkür etmək istəyirsinizsə, layihəni dəstəkləmək üçün ianə verə "
+"bilərsiniz. Təfərrüatları /thanks əmri ilə əldə etmək olar\n"
+"\n"
+"Bu bot bir neçə dili dəstəkləyir, lakin tərcümə Google Translate "
+"vasitəsilə həyata keçirilib. Əgər səhv tapsanız və onu düzəltməyə kömək "
+"etmək istəyirsinizsə, /translatemebetter əmrini göndərə və tərcümədə "
+"səhvin tam olaraq harada olduğunu təsvir edə bilərsiniz."
+
+#: src/drive/bot/communication/text.py:53
+msgid "REPLY_BOT_MESSAGE"
+msgstr "Mesaja problemin olduğu biletlə cavab verməlisiniz"
+
+#: src/drive/bot/communication/text.py:55
+msgid "DESCRIBE_YOUR_PROBLEM"
+msgstr ""
+"Bu biletin nə olduğunu təsvir edin? Zəhmət olmasa bütün problemi bir "
+"mesajda təsvir edin. Media faylları (hələ) dəstəklənmir, ona görə də "
+"yalnız mətndən istifadə edin."
+
+#: src/drive/bot/communication/text.py:57
+msgid "EXPLAIN_TRANSLATION_ERROR"
+msgstr ""
+"Tərcümə xətasının harada olduğunu təsvir edin? Media faylları (hələ) "
+"dəstəklənmir, ona görə də yalnız mətndən istifadə edin"
+
+#: src/drive/bot/communication/text.py:59
+msgid "CONTINUE_EXAM"
+msgstr "Yaxşı, suallara cavab verməyə davam edə bilərsiniz :)"
+
+#: src/drive/bot/communication/text.py:61
+msgid "EXAM_PASSED"
+msgstr "✅ İmtahan keçdi, təbrik edirik!"
+
+#: src/drive/bot/communication/text.py:63
+msgid "EXAM_FAILED"
+msgstr "❌ İmtahan uğursuz oldu :("
+
+#: src/drive/bot/communication/text.py:65
+msgid "API_COMMAND_RESPONSE"
+msgstr "Sizi tam olaraq nə maraqlandırır?"
+
+#: src/drive/bot/communication/text.py:67
+msgid "HTTP_REST_INFO"
+msgstr ""
+"API sənədləri OpenAPI və redoc formatlarında mövcuddur:\n"
+"\n"
+"- <a href='{openapi_url}'>OpenAPI</a>\n"
+"- <a href='{redoc_url}'>Redoc</a>\n"
+"\n"
+"Avtorizasiya etmək üçün siz token (əmr /api -> API Token) verməli və onu "
+"aşağıdakı formada “Authorization” başlığına keçirməlisiniz: <code>Token "
+"YOUR_API_TOKEN</code>\n"
+"\n"
+"API üçün ödəniş almırıq"
+
+#: src/drive/bot/communication/text.py:69
+msgid "GRPC_INFO"
+msgstr ""
+"GRPC müqaviləsi <a href='https://github.com/pavelan0khin/drive-bot-"
+"proto/blob/main/proto/client.proto'>burada</a> yerləşir.\n"
+"\n"
+"Bu müqavilə avtomatik olaraq aşağıdakılar vasitəsilə quraşdırıla bilən "
+"Python paketini yaradır:\n"
+"\n"
+"<code>pip install drive-bot-proto</code>\n"
+"\n"
+"Digər dillər üçün siz müqavilə faylını endirə və paketləri özünüz <a "
+"href='grpcgenerator.com'>yara bilərsiniz</a>\n"
+"\n"
+"grpc sorğularının göndərilməsi üçün ünvan: {grpc_api_address}\n"
+"\n"
+"Avtorizasiya etmək üçün siz bot vasitəsilə yarada biləcəyiniz işarədən "
+"istifadə etməlisiniz (komanda /api -> API Token). Token metadataya "
+"aşağıdakı kimi ötürülməlidir: açar - 'authorization', dəyər - "
+"YOUR_API_TOKEN"
+
+#: src/drive/bot/communication/text.py:71
+msgid "NEW_API_TOKEN"
+msgstr ""
+"Tokeniniz: <code>{api_token}</code>\n"
+"\n"
+"HTTP REST-də istifadə üçün onu 'Authorization' düyməsindəki sorğu "
+"başlıqlarına aşağıdakı formada ötürün: <code>Token {api_token}</code>\n"
+"\n"
+"GRPC-də istifadə üçün tokeni 'authorization' açarında sorğu metadatasına "
+"aşağıdakı formada ötürün: <code>{api_token}</code>"
+
+#: src/drive/bot/communication/text.py:73
+msgid "EXISTING_API_TOKEN"
+msgstr ""
+"Tokeniniz: <code>{api_token}</code>\n"
+"\n"
+"Aşağıdakı düyməni klikləməklə onu dəyişə bilərsiniz"
+
+#: src/drive/bot/communication/text.py:75
+msgid "GENERATE_NEW_TOKEN"
+msgstr "Yeni token"
+
+#: src/drive/bot/communication/text.py:77
+msgid "REISSUED_TOKEN"
+msgstr ""
+"Yenidən buraxılmış nişanınız: <code>{api_token}</code>\n"
+"\n"
+"Köhnə nişan artıq etibarlı deyil"
+
+#: src/drive/bot/communication/text.py:79
+msgid "MESSAGE_TOO_LONG"
+msgstr "Mesaj çox uzundur. Lütfən, onu 3500 simvoldan çox saxlamağa çalışın."
+
+#: src/drive/bot/communication/text.py:81
+msgid "PROBLEM_IN_PROGRESS"
+msgstr ""
+"Mesaj üçün təşəkkür edirik. Mümkün qədər tez nəyin səhv olduğunu görməyə "
+"çalışacağam. Problem həll edildikdə xəbərdar olmaq istəyirsinizsə, "
+"aşağıdakı düyməni basın"
+
+#: src/drive/bot/communication/text.py:83
+msgid "WRITE_ME_BUTTON"
+msgstr "Mənə yaz"
+
+#: src/drive/bot/communication/text.py:85
+msgid "WRITE_ME_BUTTON_RESPONSE"
+msgstr "Yaxşı, sənə yazacam"
+
+#: src/drive/bot/communication/text.py:87
+msgid "PROBLEM_RESOLVED_MESSAGE"
+msgstr ""
+"Siz əvvəllər biletlə bağlı problem barədə mesaj göndərmisiniz. Cavab "
+"aldınız:\n"
+"\n"
+"{response}"
+
+#: src/drive/bot/communication/text.py:89
+msgid "TRANSLATION_PROBLEM_IN_PROGRESS"
+msgstr ""
+"Mesaj üçün təşəkkür edirik. Mümkün qədər tez nəyin səhv olduğunu görməyə "
+"çalışacağam"
+
+#: src/drive/bot/communication/text.py:91
+msgid "DONATE_MESSAGE"
+msgstr "Ən yaxşı təşəkkür layihəyə pulla dəstək olmaqdır :) İstəsəniz sizə uyğun olan istənilən məbləği göndərə bilərsiniz, təfərrüatlar aşağıdadır:\n\n{requisites}"
+

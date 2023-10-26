@@ -1,0 +1,74 @@
+[tool.poetry]
+name = "drive"
+version = "0.1.0"
+description = ""
+authors = ["pavelan0khin <pavel.anokhin@mail.com>"]
+readme = "README.md"
+packages = [{ include = "drive", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^4.2.5"
+pytelegrambotapi = "^4.14.0"
+python-dotenv = "^1.0.0"
+django-jazzmin = "^2.6.0"
+gunicorn = "^21.2.0"
+psycopg2-binary = "^2.9.8"
+djangorestframework = "^3.14.0"
+pillow = "^10.0.1"
+django-storages = "^1.14.1"
+boto3 = "^1.28.57"
+django-jsoneditor = "^0.2.4"
+babel = "^2.12.1"
+django-filter = "^23.3"
+black = "^23.10.0"
+isort = "^5.12.0"
+mypy = "^1.6.0"
+flake8 = "^6.1.0"
+drf-spectacular = "^0.26.5"
+grpcio-tools = "^1.59.0"
+mypy-protobuf = "^3.5.0"
+grpcio-reflection = "^1.59.0"
+loguru = "^0.7.2"
+opentelemetry-instrumentation-django = "^0.41b0"
+opentelemetry-instrumentation-grpc = "^0.41b0"
+django-channels = "^0.7.0"
+drive-bot-proto = "^1.0.1"
+pydantic = "^2.4.2"
+celery = "^5.3.4"
+flower = "^2.0.1"
+redis = "^5.0.1"
+beautifulsoup4 = "^4.12.2"
+google-cloud-translate = "^3.12.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry-exec-plugin.commands]
+check = "isort src/ && black src/ && flake8 src/"
+
+[tool.black]
+line-length = 79
+target-version = ['py311']
+exclude = """
+(
+  /(
+      .eggs
+    | .git
+    | .hg
+    | .mypy_cache
+    | .nox
+    | .tox
+    | .venv
+    | _build
+    | buck-out
+    | build
+    | dist
+    | migrations
+  )/
+)
+"""
+

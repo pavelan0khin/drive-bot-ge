@@ -1,0 +1,78 @@
+version: '3.6'
+
+services:
+
+  web:
+    build:
+      context: .
+    env_file: .env
+    command: web
+    ports:
+      - 8000:8000
+    networks:
+      - drivebot-net
+
+  db:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_USER: drive
+      POSTGRES_PASSWORD: drive
+      POSTGRES_DB: drive
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: always
+    ports:
+      - "5431:5432"
+    networks:
+      - drivebot-net
+
+  minio:
+    image: minio/minio
+    ports:
+      - "9000:9000" # API port
+      - "9001:9001" # Console port (Admin page)
+    networks:
+      - drivebot-net
+    volumes:
+      - minio_data:/data
+    env_file:
+      - .env
+    command: server /data --console-address ":9001" --address 0.0.0.0:9000
+
+  celery_worker:
+    build:
+      context: .
+    env_file: .env
+    command: celery_worker
+    depends_on:
+      - redis
+    networks:
+      - drivebot-net
+
+  celery_beat:
+    build:
+      context: .
+    env_file: .env
+    command: celery_beat
+    depends_on:
+      - celery_worker
+    networks:
+      - drivebot-net
+
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    networks:
+      - drivebot-net
+
+volumes:
+  postgres_data:
+  minio_data:
+  redis-data:
+
+networks:
+  drivebot-net:
+    driver: bridge

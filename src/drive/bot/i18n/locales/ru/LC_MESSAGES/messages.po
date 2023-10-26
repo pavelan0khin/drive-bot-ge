@@ -1,0 +1,299 @@
+# Russian translations for drive-ge-bot.
+# Copyright (C) 2023 Pavel Anokhin
+# This file is distributed under the same license as the drive-ge-bot
+# project.
+# Pavel Anokhin <p.a.anokhin@gmail.com>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version:  1.0.0\n"
+"Report-Msgid-Bugs-To: p.a.anokhin@gmail.com\n"
+"POT-Creation-Date: 2023-10-26 18:02+0400\n"
+"PO-Revision-Date: 2023-10-24 15:27+0400\n"
+"Last-Translator: Pavel Anokhin <p.a.anokhin@gmail.com>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.13.0\n"
+
+#: src/drive/bot/communication/text.py:3
+msgid "NEW_USER_START_MESSAGE"
+msgstr "Hello! Choose language"
+
+#: src/drive/bot/communication/text.py:5
+msgid "START_MESSAGE"
+msgstr "Привет! Выбирай любую кнопку ниже. Информация доступна по команде /about"
+
+#: src/drive/bot/communication/text.py:7
+msgid "SELECT_NEW_LANGUAGE"
+msgstr "Выберите язык"
+
+#: src/drive/bot/communication/text.py:9
+msgid "LANGUAGE_SELECTED"
+msgstr "Выбран язык — русский. Вы можете сменить язык через команду /language"
+
+#: src/drive/bot/communication/text.py:11
+msgid "ALLOW_NOTIFICATIONS"
+msgstr ""
+"Хотите получать уведомления о добавлении новых билетов в базу и "
+"изменениях? Рекламу присылать не буду :)"
+
+#: src/drive/bot/communication/text.py:13
+msgid "NOTIFICATIONS_ARE_ON"
+msgstr "Уведомления включены. Чтобы выключить, пришлите команду /notifications"
+
+#: src/drive/bot/communication/text.py:15
+msgid "NOTIFICATIONS_ARE_OFF"
+msgstr "Уведомления выключены. Чтобы включить, пришлите команду /notifications"
+
+#: src/drive/bot/communication/text.py:17
+msgid "SELECT_BUTTONS"
+msgstr "Выберите режим и нажмите на кнопу ниже"
+
+#: src/drive/bot/communication/text.py:19
+msgid "EXAM"
+msgstr "📚 Экзамен"
+
+#: src/drive/bot/communication/text.py:21
+msgid "ALL_TICKETS"
+msgstr "❓ Все вопросы"
+
+#: src/drive/bot/communication/text.py:23
+msgid "YES"
+msgstr "Да"
+
+#: src/drive/bot/communication/text.py:25
+msgid "NO"
+msgstr "Нет"
+
+#: src/drive/bot/communication/text.py:27
+msgid "SELECT_CATEGORY"
+msgstr "Выберите категорию"
+
+#: src/drive/bot/communication/text.py:29
+msgid "DECLINE"
+msgstr "❌ Отменить"
+
+#: src/drive/bot/communication/text.py:31
+msgid "UNKNOWN_ACTION"
+msgstr ""
+"Упс, похоже вы нажали на кнопку, которой сейчас быть не должно. Если это "
+"так, то моя ошибка — пришлите команду /start, чтобы всё починить"
+
+#: src/drive/bot/communication/text.py:33
+msgid "EXAM_STARTED"
+msgstr "Тест начался, удачи. Если захоите закончить — нажмите кнопку «❌ Отменить»"
+
+#: src/drive/bot/communication/text.py:35
+msgid "EXAM_FINISHED"
+msgstr ""
+"<b>Тест завершён</b>\n"
+"\n"
+"Всего вопросов: {total_tickets}\n"
+"\n"
+"Отвечено правильно: {total_valid}\n"
+"Отвечено неправильно: {total_invalid}"
+
+#: src/drive/bot/communication/text.py:37
+msgid "WHICH_ANSWER_CHOSEN"
+msgstr ""
+"Подсказка: выбранный вами ответ помечается жирным шрифтом. Правильный "
+"ответ отмечен зелёным эмодзи, остальные — красным"
+
+#: src/drive/bot/communication/text.py:39
+msgid "DROP_PASSED_TICKETS_HISTORY"
+msgstr ""
+"Ого, похоже, что вы прошли все билеты и из больше не осталось. Пришлите "
+"команду /clearhistory, я очищу историю и начнём всё с чистого листа :)"
+
+#: src/drive/bot/communication/text.py:41
+msgid "CONFIRM_CLEAR_HISTORY"
+msgstr ""
+"Вы действительно хотите очистить историю билетов? Это означает, что вам "
+"снова будут попадаться уже пройденные ранее вопросы"
+
+#: src/drive/bot/communication/text.py:43
+msgid "HISTORY_IS_CLEAR"
+msgstr "История очищена, можете снова проходить экзамены :)"
+
+#: src/drive/bot/communication/text.py:45
+msgid "HISTORY_IS_NOT_CLEAR"
+msgstr "Окей, история не будет очищена"
+
+#: src/drive/bot/communication/text.py:47
+msgid "ACTION_DECLINED"
+msgstr "Отменил. Можете снова нажать любую кнопку ниже"
+
+#: src/drive/bot/communication/text.py:49
+msgid "SESSION_IS_OVER"
+msgstr ""
+"Видимо, вы ранее отменили тест, в рамках которого я прислал данный "
+"вопрос, ответить не получится"
+
+#: src/drive/bot/communication/text.py:51
+msgid "ABOUT_MESSAGE"
+msgstr ""
+"Список команд:\n"
+"\n"
+"/start - начало\n"
+"/about - информация о боте\n"
+"/language - сменить язык\n"
+"/notifications - вкл/выкл уведомления\n"
+"/clearhistory - очистить историю пройденных тестов\n"
+"/problem - проблема с вопросом (нужно реплайнуть вопрос)\n"
+"\n"
+"Если вы разработчик, я предоставляю бесплатный API (REST и GRPC). "
+"Пришлите команду /api, чтобы узнать подробности\n"
+"\n"
+"Также доступен <a href='https://github.com'>исходный код</a> бота. "
+"Используйте его так, как сами посчитаете нужным\n"
+"\n"
+"Если хотите сказать спасибо, можете пожертвовать на поддержку проекта. "
+"Реквизиты можно получить по команде /thanks\n"
+"\n"
+"Данный бот поддерживает несколько языков, но перевод был осуществлён "
+"через Google-переводчик. Если вы нашли ошибку и хотите помочь исправить "
+"её, можете прислать команду /translatemebetter и описать, где конкретно в"
+" переводе ошибка"
+
+#: src/drive/bot/communication/text.py:53
+msgid "REPLY_BOT_MESSAGE"
+msgstr "Необходимо реплайнуть сообщение с тем билетом, где у вас возникла проблема"
+
+#: src/drive/bot/communication/text.py:55
+msgid "DESCRIBE_YOUR_PROBLEM"
+msgstr ""
+"Опишите, что не так с этим билетом?\n"
+"\n"
+"Пожалуйста, опишите всю проблему в одном сообщении. Медиафайлы не "
+"поддерживаются (пока), так что используйте только текст"
+
+#: src/drive/bot/communication/text.py:57
+msgid "EXPLAIN_TRANSLATION_ERROR"
+msgstr ""
+"Опишите, где ошибка в переводе? Медиафайлы не поддерживаются (пока), так "
+"что используйте только текст"
+
+#: src/drive/bot/communication/text.py:59
+msgid "CONTINUE_EXAM"
+msgstr "Хорошо, можете продолжать отвечать на вопросы :)"
+
+#: src/drive/bot/communication/text.py:61
+msgid "EXAM_PASSED"
+msgstr "✅ Экзамен сдан, поздравляю!"
+
+#: src/drive/bot/communication/text.py:63
+msgid "EXAM_FAILED"
+msgstr "❌ Экзамен провален :("
+
+#: src/drive/bot/communication/text.py:65
+msgid "API_COMMAND_RESPONSE"
+msgstr "Выберите, что вас интересует"
+
+#: src/drive/bot/communication/text.py:67
+msgid "HTTP_REST_INFO"
+msgstr ""
+"Документация по API доступна в форматах OpenAPI и redoc:\n"
+"\n"
+"- <a href='{openapi_url}'>OpenAPI</a>\n"
+"- <a href='{redoc_url}'>Redoc</a>\n"
+"\n"
+"Для авторизации необходимо выпустить токен (команда /api -> API Token) и "
+"передавать его в заголовке 'Authorization' в следующем виде: <code>Token "
+"YOUR_API_TOKEN</code>\n"
+"\n"
+"Мы не берём плату за API запросы"
+
+#: src/drive/bot/communication/text.py:69
+msgid "GRPC_INFO"
+msgstr ""
+"GRPC контракт находится <a href='https://github.com/pavelan0khin/drive-"
+"bot-proto/blob/main/proto/client.proto'>здесь</a>\n"
+"\n"
+"По данному контракту автоматически генерируется пакет для Python, который"
+" может быть установлен через:\n"
+"\n"
+"<code>pip install drive-bot-proto</code>\n"
+"\n"
+"Для остальных языков вы можете скачать файл контракта и <a "
+"href='grpcgenerator.com'>сгенерировать</a> пакеты самостоятельно\n"
+"\n"
+"Адрес для отправки grpc-запросов: {grpc_api_address}\n"
+"\n"
+"Для авторизации необходимо использовать токен, который можете "
+"сгенерировать через бота (команда /api -> API Token). Токен нужно "
+"передавать в metadata следующим образом: ключ — 'authorization', значение"
+" - YOUR_API_TOKEN"
+
+#: src/drive/bot/communication/text.py:71
+msgid "NEW_API_TOKEN"
+msgstr ""
+"Ваш токен: <code>{api_token}</code>\n"
+"\n"
+"Для использования в HTTP REST передавайте его в заголовках запроса в "
+"ключе 'Authorization' в следующем виде: <code>Token {api_token}</code>\n"
+"\n"
+"Для использования в GRPC передавайте токен в metadata запроса в ключе "
+"'authorization' в следующем виде: <code>{api_token}</code>"
+
+#: src/drive/bot/communication/text.py:73
+msgid "EXISTING_API_TOKEN"
+msgstr ""
+"Ваш токен: <code>{api_token}</code>\n"
+"\n"
+"Вы можете перевыпустить его, нажав кнопку ниже"
+
+#: src/drive/bot/communication/text.py:75
+msgid "GENERATE_NEW_TOKEN"
+msgstr "Новый токен"
+
+#: src/drive/bot/communication/text.py:77
+msgid "REISSUED_TOKEN"
+msgstr ""
+"Ваш перевыпущенный токен: <code>{api_token}</code>\n"
+"\n"
+"Старый токен более недействителен"
+
+#: src/drive/bot/communication/text.py:79
+msgid "MESSAGE_TOO_LONG"
+msgstr ""
+"Сообщение слишком длинное. Пожалуйста, постарайтесь уложиться в 3 500 "
+"символов"
+
+#: src/drive/bot/communication/text.py:81
+msgid "PROBLEM_IN_PROGRESS"
+msgstr ""
+"Спасибо за сообщение. Я постараюсь посмотреть, в чём дело, как можно "
+"быстрее. Если хотите получить уведомление, когда проблема будет решена — "
+"нажмите кнопку ниже"
+
+#: src/drive/bot/communication/text.py:83
+msgid "WRITE_ME_BUTTON"
+msgstr "Напишите мне"
+
+#: src/drive/bot/communication/text.py:85
+msgid "WRITE_ME_BUTTON_RESPONSE"
+msgstr "Хорошо, я вам напишу"
+
+#: src/drive/bot/communication/text.py:87
+msgid "PROBLEM_RESOLVED_MESSAGE"
+msgstr ""
+"Ранее вы отправляли сообщение о проблеме с билетом. Вам пришёл ответ:\n"
+"\n"
+"{response}"
+
+#: src/drive/bot/communication/text.py:89
+msgid "TRANSLATION_PROBLEM_IN_PROGRESS"
+msgstr ""
+"Спасибо за сообщение. Я постараюсь посмотреть, в чём дело, как можно "
+"быстрее"
+
+#: src/drive/bot/communication/text.py:91
+msgid "DONATE_MESSAGE"
+msgstr "Лучшая благордарность — поддержать проект деньгами :) Если вам нравится, можете прислать любую удобную для вас сумму, реквизиты ниже:\n\n{requisites}"
+
+
