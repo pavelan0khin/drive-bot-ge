@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "drive"
-version = "0.1.0"
+version = "1.0.0"
 description = ""
 authors = ["pavelan0khin <pavel.anokhin@mail.com>"]
 readme = "README.md"
