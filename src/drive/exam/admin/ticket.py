@@ -23,7 +23,7 @@ class TicketAdmin(BaseAdmin):
 
     list_filter = ("topic", "categories", "created_at", "updated_at")
 
-    search_fields = ("question__ru", "description__ru")
+    search_fields = ("question__en", "description__en")
 
     readonly_fields = ("created_at", "updated_at")
 

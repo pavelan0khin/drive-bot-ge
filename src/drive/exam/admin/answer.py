@@ -21,7 +21,7 @@ class AnswerAdmin(BaseAdmin):
 
     list_filter = ("ticket", "is_valid", "created_at", "updated_at")
 
-    search_fields = ("ticket__question__ru", "answer__r")
+    search_fields = ("ticket__question__en", "answer__en")
 
     readonly_fields = ("created_at", "updated_at")
 

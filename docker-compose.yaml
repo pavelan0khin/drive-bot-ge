@@ -68,6 +68,16 @@ services:
     networks:
       - drivebot-net
 
+  grpc:
+    build:
+      context: .
+    env_file: .env
+    command: grpc
+    ports:
+      - "50051:50051"
+    networks:
+      - drivebot-net
+
 volumes:
   postgres_data:
   minio_data:

@@ -24,7 +24,7 @@ DEFAULT_FILE_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
 
 LOCALE_PATHS = (os.path.join(BASE_DIR, "bot/communication/babel/locale/"),)  # noqa
 
-GRPC_SERVICE_PORT = int(os.getenv("GRPC_SERVICE_PORT", 5050))
+GRPC_SERVICE_PORT = int(os.getenv("GRPC_SERVICE_PORT", 50051))
 
 GRPC_CONCURRENCY = int(os.getenv("GRPC_CONCURRENCY", 10))
 
