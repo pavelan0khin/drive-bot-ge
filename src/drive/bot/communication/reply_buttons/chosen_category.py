@@ -31,13 +31,14 @@ def chosen_category_button(action: Action, _):
         name__contains={action.user.language: action.message_text}
     )
     session.add_category(category)
+    service = SessionService.from_session_id(action.user.record, session_id)
+    service.reload_tickets_with_category()
     action.user.state = f"{UserState.EXAM_IN_PROGRESS}:{session.id}"
     bot.send_message(
         action.chat_id,
         _(text.EXAM_STARTED),
         reply_markup=action.markup.get_decline_button(),
     )
-    service = SessionService.from_session_id(action.user, session_id)
     _, ticket = service.get_ticket(session)
     ticket_number = service.get_current_ticket_count()
     send_ticket(action, bot, ticket, ticket_number, session)

@@ -18,13 +18,21 @@ class SessionService:
     def from_session_id(cls, user: models.User, session_id: int):
         return cls(user=user, session=Session.objects.get(id=session_id))
 
-    def _get_tickets_for_session(self, amount: int):
-        topics = TicketTopic.objects.all().values_list("id", flat=True)[:amount]
-        passed_tickets = Ticket.objects.filter(sessions__user=self.user).distinct()
+    def _get_tickets_for_session(
+        self, amount: int, extra_filters: dict | None = None
+    ):
+        if not extra_filters:
+            extra_filters = {}
+        topics = TicketTopic.objects.all().values_list("id", flat=True)[
+            :amount
+        ]
+        passed_tickets = Ticket.objects.filter(
+            sessions__user=self.user
+        ).distinct()
         tickets = list(
-            Ticket.objects.exclude(id__in=passed_tickets.values_list("id", flat=True)).filter(
-                topic_id__in=topics
-            )
+            Ticket.objects.exclude(
+                id__in=passed_tickets.values_list("id", flat=True)
+            ).filter(topic_id__in=topics, **extra_filters)
         )
         if len(tickets) == 0:
             raise NoTicketsAvailableException()
@@ -120,3 +128,10 @@ class SessionService:
             .first()
         )
         return history.bot_message_id
+
+    def reload_tickets_with_category(self):
+        tickets = self._get_tickets_for_session(
+            len(self.session.tickets.all()),
+            {"categories__in": [self.session.category.id]},
+        )
+        self.session.tickets.set(tickets)
